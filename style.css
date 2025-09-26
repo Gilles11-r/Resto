@@ -69,7 +69,7 @@ header .navbar li a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(../image/scrol.jpeg);
+    background-image: url(./image/scrol.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
 }
