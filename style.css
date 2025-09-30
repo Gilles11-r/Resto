@@ -170,18 +170,19 @@ img{
 }
 
 .menu .contenu{
-    display: flex;
-    justify-content: center;
+    display: flex; 
     flex-wrap: wrap;
     margin-top: 40px;
+    justify-content: center;
+    align-items: center;
 }
 
 .menu .contenu .box{
-    width: 350px;
-    margin-top: 20px;
-    border: 20px solid #ff0;
-    box-shadow: 20px 15px 35px rgba(0, 0, 0, 0.8);
-    overflow: hidden;
+    width: 300px;
+    margin: 20px;
+    border: 20px solid #fff;
+    box-shadow:  20px 15px 35px rgba(0, 0, 0, 0.8);
+    
 }
 
 .menu .contenu .box .inbox{
@@ -189,3 +190,127 @@ img{
     width: 100%;
     height: 300px;
 }
+
+.menu .contenu .box .inbox img {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.menu .contenu .box .text{
+    text-align: center;
+    font-weight: 300px;
+    color: #111;
+}
+
+.menu .contenu .box .text h3{
+    font-weight: 400;
+}
+
+.expert{
+    margin-top: -100px;
+}
+
+.expert .contenu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.expert .contenu .box{
+    width: 250px;
+    margin: 15px;
+}
+
+.expert .contenu .box img{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    top: 0px;
+    left: 0px;
+    object-fit: cover;
+}
+
+.expert .contenu .box h3{
+    color: #111;
+    font-weight: 400;
+    text-align: center;
+}
+
+.témoignage{
+    background-image: url(./image/design.jpeg);
+    background-size: cover;
+}
+
+
+/*.témoignage{
+    margin-top: -100px;
+}*/
+
+.témoignage .contenu{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 40px;
+}
+
+.témoignage .contenu .box{
+    width: 340px;
+    height: auto;
+    margin: 20px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+    padding: 50px;
+}
+
+.témoignage .contenu .box .inbox{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    background-color: red;
+}
+
+.témoignage .contenu .box .inbox img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+}
+
+.témoignage .contenu .box .text {
+    text-align: center;
+    color: #666;
+    font-style: italic;
+}
+
+.témoignage .contenu .box .text h3{
+    color: #fb911f;
+    margin-top: 20px;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.blanc .titre-text,
+.blanc  p{
+    color: #fff;
+}
+
+.blanc
