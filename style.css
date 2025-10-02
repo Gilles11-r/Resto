@@ -317,8 +317,10 @@ section{
 }
 
 .Contact {
-    background-image: url(image/chefbg.jpeg);
+    background-image: url(image/wesh.jpeg);
     background-size: cove;
+    background-repeat: no-repeat;
+    background-position: center;
     box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.8);
     width: 100%;
     background-position: unset;
