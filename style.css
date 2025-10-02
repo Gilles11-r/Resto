@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: 'poppins',sans-serif;
     scroll-behavior: smooth;
+    /*transition: 5s;*/
 }
 
 p{
@@ -22,6 +23,7 @@ header{
     justify-content: space-evenly;
     align-items: center;
     transition: 0.5s;
+    /*background-color: rgba(100, 100, 100, 0.5);*/
 }
 
 .logo{
@@ -150,12 +152,13 @@ section{
     height: 450px;
     width: 600px;
     position: relative;
+    overflow: hidden;
 }
 
-img{
+/*img{
     height: 450px;
     width: 600px;
-}
+}*/
 
 .titre{
     display: flex;
@@ -308,9 +311,213 @@ img{
     font-weight: 600;
 }
 
-.blanc .titre-text,
-.blanc  p{
+#blanc .titre-text,
+#blanc p{
     color: #fff;
 }
 
-.blanc
+.Contact {
+    background-image: url(image/chefbg.jpeg);
+    background-size: cove;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.8);
+    width: 100%;
+    background-position: unset;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+    /*text-align: center;*/
+}
+
+.Contact .titre_noir {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contactform {
+    /*position: relative;*/
+    padding: 75px 50px;
+    background: #fff;
+    box-shadow: 5px 15px 50px rgba(0, 0, 0, 0.8);
+    max-width: 500px;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactform .inputboite{
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.contactform h3{
+    color: #111;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contactform .inputboite input,
+ textarea{
+    width: 100%;
+    border: 2px solid #555;
+    padding: 10px;
+    color: #111;
+    outline: none;
+    font-size: 16px;
+    font-weight: 300;
+    resize: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.contactform .inputboite input[type="submit"]{
+    border-radius: 20px;
+    color: #fff;
+    background-color: #fb911f;
+    display: inline-block;
+    cursor: pointer;
+    text-transform: capitalize;
+    text-decoration: none;
+    letter-spacing: 2px;
+    outline: none;
+    border: none;
+    font-size: 1em;
+    font-weight: 900;
+    transition: 0.5s;
+    max-width: 220px;
+}
+
+.copyright{
+    padding: 20px 40px;
+    border-top: 2px solid rgba(0, 0, 0, 0.1);
+    background: rgba(228, 222, 222, 0.8);
+    text-align: center;
+}
+
+/*.copyright p:nth-child(1){
+    color: #333;
+}*/
+
+.copyright a{
+    color: #fb911f;
+    text-decoration: none;
+    font-weight: 600;
+    font-style: italic;
+}
+.acte{
+    justify-content: center;
+    align-items: center;
+}
+
+header.sticky {
+    background: #fff;
+    padding: 10px 10px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+header.sticky .logo{
+    color: #111;
+}
+
+header.sticky .navbar li a {
+    color: #000;
+}
+
+header.sticky li a:hover{
+    color: #fb911f;
+    border-bottom: 2px solid #fb911f ;
+}
+
+@media (max-width: 991px) {
+    .menuToggle {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background-image: url(image/xl.jpeg);
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+   .menuToggle.active {
+    background-image: url(image/Lysa.jpeg);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+   }
+   header.sticky .menuToggle{
+    filter: invert(1);
+   }
+
+    #space{
+        margin-top: 80px;
+    }
+    header, header.sticky{
+        padding: 10px 20px;
+    }
+    header .navbar{
+        margin-left: 0px;
+    }
+    header .navbar li a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 0.8em;
+        font-weight: 300px;
+    }
+    .navbar{
+        display: none;
+    }
+    .Apropos{
+        text-align: center;
+        overflow: hidden;
+    }
+    .col50 .img{}
+    section{
+        padding: 20px;
+    }
+    .contenue h2{
+        font-size: 2em;
+    }
+    .contenue p:nth-child(2){
+        font-size: 1.5em;
+    }
+
+    .row{
+        display: flex;
+        flex-direction: column;
+    }
+    .row .col50 {
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.row {
+    flex-direction: column;
+}
+
+img{
+        width: 700px;
+        height: 500px;
+    }
+}
+
+@media (max-width: 440px) {
+    .contenue h2{
+        font-size: 2.2em;
+    }
+
+    img{
+        width: 400px;
+        height: 400px;
+    }
+
+    .img{
+        margin-left: -100px;
+    }
+
+    .Apropos{
+        overflow: hidden;
+    }
+}
