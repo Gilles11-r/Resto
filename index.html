@@ -15,14 +15,15 @@
 <body>
     <header>
         <a href="#" class="logo"><span>R</span>esto</a>
+        <div class="menuToggle" onclick="toggleMenu();"></div>
         <ul class="navbar">
-            <li><a href="#">Acceuil</a></li>
-            <li><a href="#">A Propos</a></li>
-            <li><a href="#">Menu</a></li>
-            <li><a href="#">Expert</a></li>
-            <li><a href="#">Temoignage</a></li>
-            <li><a href="#">Contact</a></li>
-            <a href="#" class="btn-reserve">Reservation</a>
+            <li><a href="#baniere" onclick="toggleMenu();" >Acceuil</a></li>
+            <li><a href="#Apropos" onclick="toggleMenu();" >A Propos</a></li>
+            <li><a href="#menu" onclick="toggleMenu();" >Menu</a></li>
+            <li><a href="#expert" onclick="toggleMenu();" >Expert</a></li>
+            <li><a href="#témoignage" onclick="toggleMenu();" >Temoignage</a></li>
+            <li><a href="#Contact" onclick="toggleMenu();" >Contact</a></li>
+            <a href="#" class="btn-reserve" onclick="toggleMenu();" >Reservation</a>
         </ul>
     </header>
     <section class="baniere" id="baniere">
@@ -50,14 +51,14 @@
             </div>
             <div class="col50">
                 <div class="img">
-                    <img src="image/1.jpeg" alt="le_menu">
+                    <img src="image/1.jpeg" alt="le_menu" class="luxe">
                 </div>
             </div>
         </div>
     </section>
     <section class="menu" id="menu">
         <div class="titre">
-            <h2 class="titre-text"><span>M</span>enu </h2>
+            <h2 class="titre-text" id="space"><span>M</span>enu </h2>
             <p> Nous prônons des techniques de boulangerie traditionnelles qui existent depuis des centaines d’années,
                 ainsi qu’une vinification
                 à faible intervention.
@@ -135,7 +136,7 @@
     </section>
 
     <section class="expert" id="expert">
-        <div class="titre">
+        <div class="titre" id="space">
             <h2 class="titre-text">Nos <span>E</span>xperts</h2>
             <p> Nous prônons des techniques de boulangerie traditionnelles qui existent depuis des centaines d’années,
                 ainsi qu’une vinification
@@ -153,7 +154,7 @@
             </div>
             <div class="box">
                 <div class="inbox">
-                    <img src="image/lookat.jpeg" alt="ss">
+                    <img src="image/Philippe.jpeg" alt="ss">
                 </div>
                 <div class="text">
                     <h3>Spécial burger</h3>
@@ -161,7 +162,7 @@
             </div>
             <div class="box">
                 <div class="inbox">
-                    <img src="image/4.jpeg" alt="ss">
+                    <img src="image/Gilles.jpeg" alt="ss">
                 </div>
                 <div class="text">
                     <h3>Spécial burger</h3>
@@ -169,7 +170,7 @@
             </div>
             <div class="box">
                 <div class="inbox">
-                    <img src="image/chefbg.jpeg" alt="ss">
+                    <img src="image/Paul_Bocuse.jpeg" alt="ss">
                 </div>
                 <div class="text">
                     <h3>Spécial burger</h3>
@@ -179,7 +180,7 @@
     </section>
 
     <section class="témoignage" id="témoignage">
-        <div class="titre blanc">
+        <div class="titre" id="blanc"">
             <h2 class="titre-text">Que Disent Nos <span>C</span>lients</h2>
             <p> Nous prônons des techniques de boulangerie traditionnelles qui existent depuis des centaines d’années,
                 ainsi qu’une vinification
@@ -187,36 +188,84 @@
             </p>
         </div>
         <div class="contenu">
-            
+
             <div class="box">
                 <div class="inbox">
-                    <img src="image/lookat.jpeg" alt="ss">
+                    <img src="image/marina.jpeg" alt="ss">
                 </div>
                 <div class="text">
-                    <p>sLorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, corrupti iste incidunt impedit saepe libero eius error quis! Delectus doloremque consequatur, optio sunt quam doloribus rem beatae modi ut distinctio. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident blandi Lorem, ipsum dolor..</p>
-                    <h3>Spécial burger</h3>
+                    <p>sLorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, corrupti iste incidunt impedit
+                        saepe libero eius error quis! Delectus doloremque consequatur, optio ..</p>
+                    <h3>Cheffe Marina</h3>
                 </div>
             </div>
             <div class="box">
                 <div class="inbox">
-                    <img src="image/4.jpeg" alt="ss">
+                    <img src="image/Lysa.jpeg" alt="ss">
                 </div>
                 <div class="text">
-                    <p>sLorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, corrupti iste incidunt impedit saepe libero eius error quis! Delectus doloremque consequatur, optio sunt quam doloribus rem beatae modi ut distinctio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod fugiat maxime ne</p>
-                    <h3>Spécial burger</h3>
+                    <p>sLorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, corrupti iste incidunt impedit
+                        saepe libero eius error quis! Delectus doloremque consequatur, optio </p>
+                    <h3>Chef Tattooed</h3>
                 </div>
             </div>
             <div class="box">
                 <div class="inbox">
-                    <img src="image/chefbg.jpeg" alt="ss">
+                    <img src="image/Patrona.jpeg" alt="ss">
                 </div>
                 <div class="text">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, corrupti iste incidunt impedit saepe libero eius error quis! Delectus doloremque consequatur, optio sunt quam doloribus rem beatae modi ut distinctio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quaerat sa</p>
-                    <h3>Spécial burger</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, corrupti iste incidunt impedit
+                        saepe libero eius error quis! Delectus doloremque consequatur, optio s</p>
+                    <h3>Chef Philippe</h3>
                 </div>
             </div>
         </div>
     </section>
+
+    <section class="Contact" id="Contact">
+        <div class="acte">
+            <div class="titre_noir">
+                <h2 class="titre-text"><span>C</span>ontact</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, suscipit.</p>
+            </div>
+            <div class="contactform">
+                <h3>Envoyer un message</h3>
+        
+                <div class="inputboite">
+                    <input type="text" placeholder="Nom">
+                </div>
+                <div class="inputboite">
+                    <input type="text" placeholder="Email">
+                </div>
+                <div class="inputboite">
+                    <textarea name="Commentaire" id="" placeholder="Message"></textarea>
+                </div>
+                <div class="inputboite">
+                    <input type="submit" value="Envoyer">
+                </div>
+            </div>
+        
+        </div>
+    </section>
+
+    <div class="copyright">
+        <p>copyright 2025 <a href="#">Gilles</a> un site qui vous permet d'en connaître un peu plus sur quelques Plats </p>
+    </div>
+
+    <script type="text/javascript">
+        window.addEventListener('scroll', function(){
+            const header = document.querySelector('header');
+            header.classList.toggle('sticky', window.scrollY > 10);
+        });
+
+        function toggleMenu(){
+            const menuToggle = document.querySelector('.menuToggle');
+            const navbar = document.querySelector('.navbar');
+            menuToggle.classList('active');
+            navbar.classList.toggle('active');
+        }
+    </script>
+
 </body>
 
 </html>
